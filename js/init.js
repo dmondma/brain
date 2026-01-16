@@ -138,3 +138,14 @@ function initModals() {
 }
 
 initModals();
+
+
+ $('.marquee').marquee({
+    duration: 20000,      // час пробігу всієї стрічки
+    gap: 50,              // відстань між блоками
+    delayBeforeStart: 0,
+    direction: 'left',
+    duplicated: true,     // дублюємо контент для заповнення і нескінченності
+    startVisible: true,   // <-- важливо, одразу показує всі елементи
+    pauseOnHover: true // пауза при наведенні
+  });
